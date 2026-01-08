@@ -12,6 +12,22 @@ body {
     height: 100vh;
 }
 
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .popup {
     background: #0b0602;
     color: white;
@@ -80,6 +96,20 @@ body {
     width: 100%;
 }
 
+#openBtn {
+    background: #8de7d1;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#openBtn:hover {
+    background: #a5fde7;
+}
+
 #closeBtn {
     position: absolute;
     background: rgba(255, 255, 255, 0.295);
@@ -99,4 +129,5 @@ body {
 #closeBtn:hover {
     background: rgba(255, 255, 255, 0.4);
 }
+
 
